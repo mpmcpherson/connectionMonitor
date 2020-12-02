@@ -1,0 +1,2 @@
+
+INSERT INTO `general_dev_bastion`.`connTime`(`time`, `location`) VALUES (NULL, NULL);
