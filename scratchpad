@@ -1,2 +1,16 @@
-
+//inserts
 INSERT INTO `general_dev_bastion`.`connTime`(`time`, `location`) VALUES (NULL, NULL);
+
+//puts
+curl -X PUT 'http://localhost/updatetime/resources/dateTimeHandler.php' -d '{ "name" : "genericName" }'	
+
+
+//post
+curl -X post 'http://localhost/connTime/resources/dateTimeHandler.php' -d '{ "name" : "genericName" }'	
+
+
+//sleeps
+sleep 30s
+
+//lns
+sudo ln -s /home/michaelmcpherson/src/
