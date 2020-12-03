@@ -75,6 +75,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "scratchpad",
+			"settings":
+			{
+				"buffer_size": 388,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "conn.sh",
+			"settings":
+			{
+				"buffer_size": 261,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/dateTimeHandler.php",
+			"settings":
+			{
+				"buffer_size": 514,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/defaultConnector.php",
+			"settings":
+			{
+				"buffer_size": 695,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -140,12 +176,17 @@
 	},
 	"expanded_folders":
 	[
-		"/home/michaelmcpherson/src/connTime"
+		"/home/michaelmcpherson/src/connTime",
+		"/home/michaelmcpherson/src/connTime/resources"
 	],
 	"file_history":
 	[
-		"/home/michaelmcpherson/src/connTime/.gitignore",
+		"/home/michaelmcpherson/src/roundtable/webmethods/addTask.php",
 		"/home/michaelmcpherson/src/clientSideBlogger/bloggingClientBase/resources/postHandler.php",
+		"/home/michaelmcpherson/src/gitRecurse/bintest.sh",
+		"/home/michaelmcpherson/src/writtenRecords/how to symbolic link your www-http folder to dev source",
+		"/home/michaelmcpherson/src/roundtable/webmethods/addUserToTeam.php",
+		"/home/michaelmcpherson/src/connTime/.gitignore",
 		"/home/michaelmcpherson/src/clientSideBlogger/bloggingClientBase/phprc",
 		"/home/michaelmcpherson/src/clientSideBlogger/bloggingClientBase/index.php",
 		"/home/michaelmcpherson/src/clientSideBlogger/bloggingClientBase/js/helper.js",
@@ -199,7 +240,6 @@
 		"/home/michaelmcpherson/src/DnDModuleGenerator/basicGenerator.php",
 		"/home/michaelmcpherson/src/DnDModuleGenerator/05dndPlotList",
 		"/home/michaelmcpherson/Documents/smugdamian",
-		"/home/michaelmcpherson/src/writtenRecords/how to symbolic link your www-http folder to dev source",
 		"/home/michaelmcpherson/src/DnDModuleGenerator/README.md",
 		"/home/michaelmcpherson/src/newUIframework/uiSite/css/style.css",
 		"/home/michaelmcpherson/src/newUIframework/uiSite/js/themes/silver/theme.js",
@@ -225,7 +265,6 @@
 		"/home/michaelmcpherson/src/newUIframework/uiSite/resources/logger.php",
 		"/home/michaelmcpherson/src/newUIframework/uiSite/js/app.js",
 		"/home/michaelmcpherson/src/DnDModuleGenerator/site/adventureGenerator/index.php",
-		"/home/michaelmcpherson/src/gitRecurse/bintest.sh",
 		"/home/michaelmcpherson/src/gitRecurse/gitScan.config",
 		"/home/michaelmcpherson/src/gitRecurse/dmg adventure generator text",
 		"/home/michaelmcpherson/src/writtenRecords/DnD/Necromancer Nine/siteVersion/strangegods/index.php",
@@ -269,9 +308,7 @@
 		"/home/michaelmcpherson/src/writtenRecords/DnD/plot episode 1",
 		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 3",
 		"/home/michaelmcpherson/src/writtenRecords/DnD/dnd session notes 2",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 2",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Ludolf",
-		"/home/michaelmcpherson/src/DnDModuleGenerator/site/settlementGenerator/lists/05currentCalamityList"
+		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 2"
 	],
 	"find":
 	{
@@ -306,8 +343,122 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scratchpad",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "conn.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								261
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/dateTimeHandler.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/defaultConnector.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								695,
+								695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
