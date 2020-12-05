@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -23,11 +24,7 @@
 			<div class="header">
 				<h3>Page Title</h3>
 			</div> 
-			<!--<button id="btn">Top Button Text</button>-->
-			<div id="text">Here's some text, and isn't it interesting?</div>
-			<div id="text">Lorem ipsum dolor sit amet. Dulche et decorum est</div>
-			<div id="text">Here's some text, and isn't it interesting?</div>
-			<div> End Text		</div>	
+			
 		</div>
 
 	</div>
@@ -37,29 +34,51 @@
 <script type="text/javascript" src="js\helper.js"></script>
 <script type="text/javascript">
 	var button = document.getElementById('btn');
-	var resultDiv = document.getElementById('results');
+	var targetDiv = document.getElementById('body');
 
 	docReady(function() {
     	let leftbar = document.getElementById('leftBar');
-    	leftbar.setAttribute("class","leftBar full")
-	});
+    	leftbar.setAttribute("class","leftBar full");
 
- 
-	button.addEventListener('click', function() {
-		//console.log("hit click");
-		alert("click");
-  		/*getRequest('basicGenerator.php',
+    	getRequest('resources/resultsRequest.php',
   			function(response){
+  				
   				//console.log(response);
-  				resultDiv.innerHTML = response;
+  				let composition = "<table><tr><th>ID</th><th>TIME</th><th>LOCATION</th></tr>";
+  				try{
+  					let v = JSON.parse(response);
+  					console.log(v);
+  					
+  					for(let i = 0; i < v.length; i++)
+  					{  					
+						let outDate = new Date(Date.parse(v[i][1]));
+						
+						composition += "<tr><td>"+v[i][0]+"</td><td>"+outDate.toString()+"</td><td>"+v[i][2]+"</td></tr>";
+  					}
+  				}catch(error)
+  				{
+  					console.log(error);
+  				}
+  				//targetDiv.innerHTML = response;
+  				composition += "</table>";
+
+  				let carrierDiv = document.createElement("div");
+  				carrierDiv.style.width='100%';
+  				carrierDiv.innerHTML = composition;
+  				
+  				targetDiv.appendChild(carrierDiv);
   			},
   			function(response){
-  				resultDiv.innerHTML = 'An error occurred during your request: ' +  response.status + ' ' + response.statusText;
+  				targetDiv.innerHTML = 'An error occurred during your request: ' +  response.status + ' ' + response.statusText;
   			},
   			null);
-*/
+
+
 	});
 
+ 	
+
+		
 
 
 </script>

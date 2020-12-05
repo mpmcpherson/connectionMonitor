@@ -4,7 +4,6 @@ body
 	background-color: #edefd3;
 	height: 100%; margin: 0px; padding: 0px;
 }
-
 .leftBar
 {
 	background-color: #e1e4b4;
@@ -46,3 +45,41 @@ body
 .eighty { height: 80%; }
 .ninety { height: 90%; }
 .full { height: 100% }
+
+
+table {
+    border-collapse:collapse;
+    width:100%;
+    min-width:400px;
+    text-align:center;
+}
+
+caption {
+    caption-side:bottom;
+    font-weight:bold;
+    font-style:italic;
+    margin:4px;
+}
+
+table,th, td {
+    border: 1px solid gray;
+}
+
+th, td {
+    height: 24px;
+    padding:4px;
+    vertical-align:middle;
+}
+tr:nth-child(odd){ 
+		background: #b8d1f3;
+}
+tr:nth-child(even){
+		background: #dae5f4;
+	}
+th {
+    background-image:url(table-shaded.png);
+}
+
+.rowtitle {
+    font-weight:bold;
+}
