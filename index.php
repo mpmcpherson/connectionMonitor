@@ -56,36 +56,6 @@
 
 	});
 
- 	
-	function tableOutput(response)
-	{
-		let composition = "<table><tr><th>ID</th><th>TIME</th><th>LOCATION</th></tr>";
-  				try{
-  					let v = JSON.parse(response);
-  					console.log(v);
-  					
-  					for(let i = 0; i < v.length; i++)
-  					{  					
-						let outDate = new Date(Date.parse(v[i][1]));
-						
-						composition += "<tr><td>"+v[i][0]+"</td><td>"+outDate.toString()+"</td><td>"+v[i][2]+"</td></tr>";
-  					}
-  				}catch(error)
-  				{
-  					console.log(error);
-  				}
-  				
-		composition += "</table>";
-
-		let carrierDiv = document.createElement("div");
-		
-		carrierDiv.style.width='100%';
-		
-		carrierDiv.innerHTML = composition;
-		
-		targetDiv.appendChild(carrierDiv);
-	}
-
 	function tableAlternative(response)
 	{
 		let tableOut = "";
@@ -102,6 +72,7 @@
 		targetDiv.appendChild(tableOut);
 	}
 	
+	//build table
 	function autoTabler(data, headerAry)
 	{	
 		headerAry = (typeof headerAry === 'undefined' || headerAry.length !== data[0].length) ? 'default' : headerAry;
@@ -138,7 +109,21 @@
 		return table;
 	}
 	
-	function updateTableData(){}	
+
+	function updateTableData()
+	{
+		/*
+		var list = document.querySelector('#test-list');
+
+		[...list.children]
+		  .sort((a,b)=>a.innerText>b.innerText?1:-1)
+		  .forEach(node=>list.appendChild(node));
+		*/
+		//get ids
+		//get highest ids
+		//send getRequest to pull all IDs greater than the current highest
+
+	}	
 	function updateTable(response)
 	{
 		let tableOut = "";
@@ -152,10 +137,26 @@
 		{
 			console.log(error);
 		}
+		//do the appends to the head of the table, either by doing it just after the header, or prepending to the highest ID
+
 	}
 	function updateParser(data)
-	{
+	{//do the actual row generation
 
+		let updateAry = new Array();
+		for(let i=0; i<data.length; i++)
+		{
+			let row = document.createElement("tr");
+			for(let j = 0; j<data[i].length; j++)
+			{
+				let bodyTd = document.createElement("td");
+				bodyTd.innerText = data[i][j];
+				row.appendChild(bodyTd);
+			}
+			row.classList.add("tableBodyRow");
+			row.id=data[i][0];
+			updateAry.push(row);
+		}
 	}
 
 
