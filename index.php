@@ -44,7 +44,22 @@
   			function(response){
   				
   				//console.log(response);
-  				let composition = "<table><tr><th>ID</th><th>TIME</th><th>LOCATION</th></tr>";
+  				//tableOutput(response);
+  				tableAlternative(response);
+  				
+  			},
+  			function(response){
+  				targetDiv.innerHTML = 'An error occurred during your request: ' +  response.status + ' ' + response.statusText;
+  			},
+  			null);
+
+
+	});
+
+ 	
+	function tableOutput(response)
+	{
+		let composition = "<table><tr><th>ID</th><th>TIME</th><th>LOCATION</th></tr>";
   				try{
   					let v = JSON.parse(response);
   					console.log(v);
@@ -59,26 +74,89 @@
   				{
   					console.log(error);
   				}
-  				//targetDiv.innerHTML = response;
-  				composition += "</table>";
-
-  				let carrierDiv = document.createElement("div");
-  				carrierDiv.style.width='100%';
-  				carrierDiv.innerHTML = composition;
   				
-  				targetDiv.appendChild(carrierDiv);
-  			},
-  			function(response){
-  				targetDiv.innerHTML = 'An error occurred during your request: ' +  response.status + ' ' + response.statusText;
-  			},
-  			null);
+		composition += "</table>";
 
-
-	});
-
- 	
-
+		let carrierDiv = document.createElement("div");
 		
+		carrierDiv.style.width='100%';
+		
+		carrierDiv.innerHTML = composition;
+		
+		targetDiv.appendChild(carrierDiv);
+	}
+
+	function tableAlternative(response)
+	{
+		let tableOut = "";
+
+		try{
+			let data = JSON.parse(response);
+			let header = ["ID", "TIME", "LOCATION"];
+			tableOut = autoTabler(data,header);
+		}catch(error)
+		{
+			console.log(error);
+		}
+
+		targetDiv.appendChild(tableOut);
+	}
+	
+	function autoTabler(data, headerAry)
+	{	
+		headerAry = (typeof headerAry === 'undefined' || headerAry.length !== data[0].length) ? 'default' : headerAry;
+		//create table parent
+		let table = document.createElement("table");
+
+		if(headerAry !== 'default')
+		{
+			let headerRow = document.createElement("tr");
+			for(let i=0; i<headerAry.length; i++)
+			{
+				let headerTh = document.createElement("th");
+				headerTh.innerText = headerAry[i];
+				headerRow.appendChild(headerTh);
+			}	
+			headerRow.id = "headerRow;"		
+			table.appendChild(headerRow);
+		}
+
+
+		for(let i=0; i<data.length; i++)
+		{
+			let row = document.createElement("tr");
+			for(let j = 0; j<data[i].length; j++)
+			{
+				let bodyTd = document.createElement("td");
+				bodyTd.innerText = data[i][j];
+				row.appendChild(bodyTd);
+			}
+			row.classList.add("tableBodyRow");
+			row.id=data[i][0];
+			table.appendChild(row);
+		}
+		return table;
+	}
+	
+	function updateTableData(){}	
+	function updateTable(response)
+	{
+		let tableOut = "";
+		try
+		{
+			let data = JSON.parse(response);
+			tableOut = updateParser(data);
+
+		}
+		catch(error)
+		{
+			console.log(error);
+		}
+	}
+	function updateParser(data)
+	{
+
+	}
 
 
 </script>
