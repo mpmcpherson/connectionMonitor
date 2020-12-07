@@ -4,7 +4,7 @@
 //In this case, it's literally named $dbhandle (see below).
 require 'defaultConnector.php';
 
-$qq = "SELECT * FROM connTime ORDER BY Id desc";
+$qq = "SELECT * FROM connTime ORDER BY Id desc LIMIT 100";
     
 
 $result = mysqli_query($dbhandle, $qq);
