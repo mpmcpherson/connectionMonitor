@@ -22,4 +22,3 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 echo json_encode($output);
 
 ?>
-

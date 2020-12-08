@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Add your title here</title>
@@ -59,7 +58,7 @@
 	function tableAlternative(response)
 	{
 		let tableOut = "";
-
+		
 		try{
 			let data = JSON.parse(response);
 			let header = ["ID", "TIME", "LOCATION"];
