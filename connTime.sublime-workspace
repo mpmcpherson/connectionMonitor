@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"header",
+				"headerAry"
+			],
+			[
 				"file",
 				"file_get_contents"
 			],
@@ -76,38 +80,35 @@
 	"buffers":
 	[
 		{
-			"file": "scratchpad",
+			"file": "resources/resultsRequest.php",
 			"settings":
 			{
-				"buffer_size": 388,
+				"buffer_size": 545,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 3535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 1674,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "conn.sh",
+			"file": "js/helper.js",
 			"settings":
 			{
-				"buffer_size": 261,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/dateTimeHandler.php",
-			"settings":
-			{
-				"buffer_size": 514,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/defaultConnector.php",
-			"settings":
-			{
-				"buffer_size": 695,
-				"encoding": "UTF-8",
+				"buffer_size": 1496,
 				"line_ending": "Unix"
 			}
 		}
@@ -177,10 +178,18 @@
 	"expanded_folders":
 	[
 		"/home/michaelmcpherson/src/connTime",
+		"/home/michaelmcpherson/src/connTime/css",
+		"/home/michaelmcpherson/src/connTime/js",
 		"/home/michaelmcpherson/src/connTime/resources"
 	],
 	"file_history":
 	[
+		"/home/michaelmcpherson/src/connTime/resources/defaultConnector.php",
+		"/home/michaelmcpherson/src/roundtable/webmethods/loadNodes.php",
+		"/home/michaelmcpherson/src/connTime/resources/dateTimeHandler.php",
+		"/home/michaelmcpherson/src/connTime/conn.sh",
+		"/home/michaelmcpherson/src/connTime/scratchpad",
+		"/home/michaelmcpherson/Downloads/cpuflags.txt",
 		"/home/michaelmcpherson/src/roundtable/webmethods/addTask.php",
 		"/home/michaelmcpherson/src/clientSideBlogger/bloggingClientBase/resources/postHandler.php",
 		"/home/michaelmcpherson/src/gitRecurse/bintest.sh",
@@ -302,17 +311,11 @@
 		"/var/www/html/index.html",
 		"/home/michaelmcpherson/src/DnDModuleGenerator/site/settlementGenerator/index.php",
 		"/home/michaelmcpherson/src/DnDModuleGenerator/site/villainGenerator/index.php",
-		"/home/michaelmcpherson/src/DnDModuleGenerator/site/npcGenerator/index.php",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Duchy of the Eight Granite Vines",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 4",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/plot episode 1",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 3",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/dnd session notes 2",
-		"/home/michaelmcpherson/src/writtenRecords/DnD/Plot Episode 2"
+		"/home/michaelmcpherson/src/DnDModuleGenerator/site/npcGenerator/index.php"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -343,81 +346,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scratchpad",
+					"file": "resources/resultsRequest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 388,
+						"buffer_size": 545,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								388,
-								388
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "conn.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/dateTimeHandler.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
+								545,
+								545
 							]
 						],
 						"settings":
@@ -432,20 +378,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/defaultConnector.php",
+					"buffer": 1,
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 3535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								3522,
+								3522
 							]
 						],
 						"settings":
@@ -453,10 +399,67 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2150.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1230,
+								1230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/helper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -464,7 +467,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -513,7 +516,7 @@
 	"project": "connTime.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
